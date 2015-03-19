@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>2014-2015深圳跨年迷笛音乐节</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background: #000;
+        }
+        .midi-bg {
+            background-image: url(bg.png);
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: top center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .midi-logo {
+            background-image: url(logo.png);
+            background-repeat: no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+            width: 967px;
+            height: 437px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -483.5px;
+            margin-top: -218.5px;
+            text-indent: -9999px;
+        }
+        .midi-buy {
+            position: absolute;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+        }
+        .midi-button {
+            display: block;
+            background-image: url(button.png);
+            background-repeat: no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+            width: 170px;
+            height: 44px;
+            position: absolute;
+            left: 50%;
+            bottom: 15%;
+            margin-left: -85px;
+            margin-top: -22px;
+            text-indent: -9999px;
+        }
+        .midi-qrcode {
+            display: block;
+            background-image: url(qr.png);
+            background-repeat: no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+            width: 108px;
+            height: 125px;
+            text-indent: -9999px;
+            position: absolute;
+            z-index: 9999;
+            top: 0;
+            right: 100px;
+        }
+
+        @media screen and (max-width: 1500px) {
+            .midi-logo {
+                width: 60%;
+                margin-left: 0;
+                left: 20%;
+            }
+        }
+
+        @media screen and (max-height: 800px) {
+            .midi-logo {
+                width: 50%;
+                margin-left: 0;
+                left: 25%;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .midi-bg {
+                background-image: url('bg-tablet.png') !important;
+            }
+            .midi-logo {
+                width: 80%;
+                margin-left: 0;
+                left: 10%;
+            }
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1024px),
+               screen and (min-resolution: 144dpi)              and (max-width: 1024px),
+               screen and (min-resolution: 1.5dppx)             and (max-width: 1024px) {
+            .midi-bg {
+                background-image: url('bg-tablet@2x.png') !important;
+            }
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 1.5),
+               screen and (min-resolution: 144dpi),
+               screen and (min-resolution: 1.5dppx) {
+            .midi-bg {
+                background-image: url(bg@2x.png);
+            }
+            .midi-logo {
+                background-image: url(logo@2x.png);
+            }
+            .midi-button {
+                background-image: url(button@2x.png);
+            }
+            .midi-qrcode {
+                background-image: url(qr@2x.png);
+            }
+        }
+
+        @media screen and (max-width: 555px) {
+            .midi-qrcode {
+                display: none !important;
+            }
+        }
+    </style>
+    <script>
+        window._CWiQ = window._CWiQ || [];
+        window.BX_CLIENT_ID = 35397;
+        (function() {
+            var c = document.createElement('script'),
+                p = 'https:' == document.location.protocol;
+            c.type = 'text/javascript';
+            c.async = true;
+            c.src = (p ? 'https://' : 'http://') + 'whisky.ana.biddingx.com/boot/0';
+            var h = document.getElementsByTagName('script')[0];
+            h.parentNode.insertBefore(c, h);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="midi-bg">
+        <div class="midi-logo">
+            2014-2015深圳跨年迷笛音乐节
+        </div>
+        <div class="midi-buy">
+            <a href="https://youyanchu.com/show/12479"
+               data-stat="_trackReg"
+               class="midi-button">
+                立即抢购
+            </a>
+        </div>
+        <a href="https://youyanchu.com"
+           data-stat="_trackLogin"
+           class="midi-qrcode">
+            有演出手机APP
+        </a>
+    </div>
+    <script>
+        (function () {
+            var stats = document.querySelectorAll('[data-stat]');
+            for (var i = stats.length - 1; i > -1; i--) {
+                stats[i].onclick = function () {
+                    _CWiQ.push([this.getAttribute('data-stat'), 1]);
+                };
+            }
+        })();
+    </script>
+</body>
+
+</html>

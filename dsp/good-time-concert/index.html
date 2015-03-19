@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <title>有演出 - 请你十元看美好时光演唱会</title>
+        <meta name="description"
+              content="音乐演出速查工具，涵盖全国 Livehouse 演出、音乐节、演唱会、音乐会等多种音乐演出信息。手机 App 抢鲜版最新上市！">
+        <link rel="shortcut icon" href="/favicon.ico?v=20140312">
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background: url('bg.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .main {
+                background: url('main.png');
+                background-repeat: no-repeat;
+                width: 1094px;
+                height: 717px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -358px;
+                margin-left: -559px;
+            }
+
+            .button-buy {
+                background: url('buy.png');
+                background-repeat: no-repeat;
+                display: block;
+                width: 214px;
+                margin-left: -96px;
+                height: 90px;
+                text-indent: -9999px;
+                position: absolute;
+                left: 50%;
+                bottom: 63px;
+            }
+
+            .qrcode {
+                background: url('qrcode.png');
+                background-repeat: no-repeat;
+                display: block;
+                width: 114px;
+                height: 140px;
+                text-indent: -9999px;
+                position: absolute;
+                right: 100px;
+                top: 0;
+            }
+        </style>
+        <script>
+            window._CWiQ = window._CWiQ || [];
+            window.BX_CLIENT_ID = 35397;
+            (function() {
+                var c = document.createElement('script'),
+                    p = 'https:' == document.location.protocol;
+                c.type = 'text/javascript';
+                c.async = true;
+                c.src = (p ? 'https://' : 'http://') + 'whisky.ana.biddingx.com/boot/0';
+                var h = document.getElementsByTagName('script')[0];
+                h.parentNode.insertBefore(c, h);
+            })();
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <a class="button-buy"
+               data-stat="_trackReg"
+               title="进入抢票 每个 ID 限抢一张"
+               href="https://youyanchu.com/show/11343/tickets/18964">
+               进入抢票 每个 ID 限抢一张
+            </a>
+        </div>
+        <a class="qrcode"
+           data-stat="_trackLogin"
+           title="下载有演出APP"
+           href="https://youyanchu.com/apps">
+           下载有演出APP
+        </a>
+        <script>
+            (function () {
+                var stats = document.querySelectorAll('[data-stat]');
+                for (var i = stats.length - 1; i > -1; i--) {
+                    stats[i].onclick = function () {
+                        _CWiQ.push([this.getAttribute('data-stat'), 1]);
+                    };
+                }
+            })();
+        </script>
+    </body>
+</html>
